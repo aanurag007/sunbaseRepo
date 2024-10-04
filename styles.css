@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #555657;
+    padding: 20px;
+    color: rgb(248, 238, 238);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: black;
+    background-color: #77edeb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.sidebar button:hover {
+    background-color: #0984e3;
+}
+
+/* Form Designer Styling */
+.form-area {
+    flex-grow: 1;
+    padding: 50px;
+    background-color: #dfe6e9;
+}
+
+.form-area h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+#form-designer {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1.1);
+    min-height: 650px; 
+    
+    
+}
+
+.form-element {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-element label {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.form-element input,
+.form-element select,
+.form-element textarea {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 30px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+/* .add-option-btn {
+    padding: 5px 10px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;} */
+
+
+.delete-btn {
+    padding: 8px 12px;
+    background-color: #d34545;
+    color: wheat;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: #890505;
+}
+
+#save-form {
+    position: absolute;
+    width: 85px;
+    top: 40px;
+    right: 50px;
+    padding: 10px;
+    background-color:  #46eeec;
+    color: black;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+#save-form:hover {
+    background-color: #0984e3;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-area {
+        padding: 15px;
+    }
+    #save-btn {
+        top: 10px;
+        right: 10px;
+      }
+    
+}
